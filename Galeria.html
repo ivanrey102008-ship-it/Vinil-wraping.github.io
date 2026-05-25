@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Profesional - Wrapping & Vinil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: #fff;
+        }
+
+        header {
+           background: linear-gradient(90deg, #000, #1a1a1a);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+         nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .galeria {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.4s ease;
+            cursor: pointer;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px #00f2ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .galeria {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galería de Trabajos en Vinil & Wrapping</h1>
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="Galeria.html">Galería</a>
+        <a href="Informacion.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="galeria">
+    <img src="Imagenes/Imagen1.jpeg" alt="">
+    <img src="Imagenes/Imagen2.jpeg" alt="">
+    <img src="Imagenes/Imagen3.jpeg" alt="">
+    <img src="Imagenes/Imagen4.jpeg" alt="Wrap 4">
+    <img src="Imagenes/Imagen5.jpeg" alt="Wrap 5">
+    <img src="Imagenes/Imagen6.jpeg" alt="Wrap 6">
+    <img src="Imagenes/Imagen7.jpeg" alt="Wrap 7">
+    <img src="Imagenes/Imagen8.jpeg" alt="Wrap 8">
+    <img src="Imagenes/Imagen9.jpeg" alt="Wrap 9">
+    <img src="Imagenes/Imagen10.jpeg" alt="Wrap 10">
+    <img src="Imagenes/Imagen11.jpeg" alt="Wrap 11">
+    <img src="Imagenes/Imagen12.jpeg" alt="Wrap 12">
+     <img src="Imagenes/Imagen13.jpeg" alt="wrap13">
+    <img src="Imagenes/Imagen14.jpeg" alt="wrap14">
+    <img src="Imagenes/Imagen15.jpeg" alt="wrap15">
+    <img src="Imagenes/Imagen16.jpeg" alt="Wrap 16">
+    <img src="Imagenes/Imagen17.jpeg" alt="Wrap 17">
+    <img src="Imagenes/Imagen18.jpeg" alt="Wrap 18">
+    <img src="Imagenes/Imagen19.jpeg" alt="Wrap 19">
+    <img src="Imagenes/Imagen20.jpeg" alt="Wrap 20">
+    <img src="Imagenes/Imagen21.jpeg" alt="Wrap 21">
+    <img src="Imagenes/Imagen22.jpeg" alt="Wrap 22">
+    <img src="Imagenes/Imagen23.jpeg" alt="Wrap 23">
+    <img src="Imagenes/Imagen24.jpeg" alt="Wrap 24">
+</section>
+
+<footer>
+    © 2026 Vinil & Wrapping | Especialistas en Personalización Automotriz Acambaro
+</footer>
+
+</body>
+</html>

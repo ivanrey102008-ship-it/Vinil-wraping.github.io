@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carrusel de Imágenes</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align: center;
+}
+
+.carrusel{
+    position: relative;
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel img{
+    width: 100%;
+    display: none;
+}
+
+.activa{
+    display: block;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.anterior{
+    left: 0;
+}
+
+.siguiente{
+    right: 0;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Carrusel de Imágenes</h2>
+
+<div class="carrusel">
+
+<img src="img1.jpg" class="activa">
+<img src="img2.jpg">
+<img src="img3.jpg">
+
+<button class="anterior" onclick="cambiar(-1)">❮</button>
+<button class="siguiente" onclick="cambiar(1)">❯</button>
+
+</div>
+
+<script>
+let indice = 0;
+let imagenes = document.querySelectorAll(".carrusel img");
+
+function mostrarImagen(){
+    imagenes.forEach(img => img.classList.remove("activa"));
+    imagenes[indice].classList.add("activa");
+}
+
+function cambiar(direccion){
+    indice += direccion;
+
+    if(indice < 0){
+        indice = imagenes.length - 1;
+    }
+
+    if(indice >= imagenes.length){
+        indice = 0;
+    }
+
+    mostrarImagen();
+}
+</script>
+
+</body>
+</html>

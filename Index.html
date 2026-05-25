@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viniles & Wrapping</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+                z-index: 1; 
+            background: linear-gradient(90deg, #000, #1a1a1a);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        
+
+        header h1 {
+            color: #00e5ff;
+        }
+        
+       
+        
+        nav a {
+    z-index: 1; 
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+                z-index: 1; 
+            color: #00e5ff;
+        }
+
+        .hero {
+            height: 90vh;
+            background-image: url(Imagenes/Imagen52) center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            background: rgba(0,0,0,0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #222;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #00e5ff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #00e5ff;
+            color: #000;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .contact a:hover {
+            background: #00bcd4;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }.carrusel
+            {
+font-family: Arial;
+background:#000;
+text-align:center;
+color:white;
+}
+
+.carrusel{
+position:absolute;
+width:1200px;
+max-width:1200px;
+height:400px;
+margin:auto;
+overflow:hidden;
+border-radius:10px;
+}
+
+.slides{
+display:flex;
+width:100%;
+height:100%;
+transition: transform 0.5s ease;
+}
+
+.slides img{
+width:1200px;
+height:400px;
+object-fit:cover;
+}
+
+.boton{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.5);
+color:white;
+border:none;
+padding:15px;
+cursor:pointer;
+font-size:18px;
+}
+
+.izquierda{
+left:10px;
+}
+
+.derecha{
+right:10px;
+}.carrusel
+{
+font-family: Arial;
+background:#000;
+text-align:center;
+color:white;
+}
+
+.carrusel{
+position:relative;
+width:1500px;
+height:750px;
+margin:auto;
+overflow:hidden;
+border-radius:10px;
+}
+
+.slides{
+display:flex;
+width:100%;
+height:100%;
+transition: transform 0.5s ease;
+}
+
+.slides img{
+width:1200px;
+height:100%;
+object-fit:cover;
+}
+
+.boton{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.5);
+color:white;
+border:none;
+padding:15px;
+cursor:pointer;
+font-size:18px;
+}
+
+.izquierda{
+left:10px;
+}
+
+.derecha{
+right:10px;
+}
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+
+<header>
+    <h1>Vinil & Wrapping</h1>
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="Galeria.html">Galería</a>
+        <a href="Informacion.html">Contacto</a>
+    </nav>
+
+        
+    </body>
+    <body>
+</header>
+<div class="carrusel">
+<div class="slides" id="slides">
+<img src="Imagenes/Imagen1.jpeg">
+<img src="Imagenes/Imagen4.jpeg">
+<img src="Imagenes/Imagen10.jpeg">
+<img src="Imagenes/Imagen2.jpeg">
+<img src="Imagenes/Imagen34.jpeg">
+<img src="Imagenes/Imagen31.jpeg">
+<img src="Imagenes/Imagen18.jpeg">
+<img src="Imagenes/Imagen19.jpeg">
+
+
+</div>
+
+<button class="boton izquierda" onclick="mover(-1)">❮</button>
+<button class="boton derecha" onclick="mover(1)">❯</button>
+
+</div>
+
+</section>
+<script>
+
+let indice = 0;
+
+function mover(direccion){
+
+const slides = document.getElementById("slides");
+const total = slides.children.length;
+
+indice += direccion;
+
+if(indice < 0){
+indice = total - 1;
+}
+
+if(indice >= total){
+indice = 0;
+}
+
+slides.style.transform = "translateX(-" + (indice * 700) + "px)";
+}
+
+setInterval(()=>{
+mover(1);
+},4000);
+
+</script>
+
+
+<section id="servicios">
+    <h2 style="text-align:center; margin-bottom:40px;">Nuestros Servicios</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Wrapping Automotriz</h3>
+            <p>Cambio de color total o parcial con acabados mate, brillo, fibra de carbono y más.</p>
+        </div>
+        <div class="card">
+            <h3>Vinil Publicitario</h3>
+            <p>Rotulación vehicular para empresas y negocios con diseño personalizado.</p>
+        </div>
+        <div class="card">
+            <h3>Protección PPF</h3>
+            <p>Película protectora para pintura contra rayones, piedras y desgaste.</p>
+        </div>
+    </div>
+</section>
+
+<section id="galeria">
+    <h2 style="text-align:center; margin-bottom:40px;">Galería</h2>
+    <div class="gallery">
+        <img src="Imagenes/Imagen1.jpeg" alt="Car Wrap 1">
+        <img src="Imagenes/Imagen23.jpeg" alt="Car Wrap 2">
+        <img src="Imagenes/Imagen25.jpeg" alt="Car Wrap 3">
+    </div>
+</section>
+
+<section id="contacto" class="contact">
+    <h2>Contáctanos</h2>
+    <p>Solicita tu cotización personalizada hoy mismo.</p>
+    <a href="https://wa.me/+524643165795" target="_blank">Enviar WhatsApp</a>
+</section>
+
+<footer>
+    © 2026 Vinil & Wrapping | Especialistas en Personalización Automotriz Acambaro
+</footer>
+
+</body>
+</html>
